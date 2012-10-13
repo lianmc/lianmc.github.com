@@ -5,13 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>AlianStudio Blog</title>
+  <title>Blog Archive - AlianStudio Blog</title>
   <meta name="author" content="lianmc">
 
   
-  <meta name="description" content="Git初始化 命令补全 $ brew install bash-completion
-# add the following lines to your ~/.bash_profile
-if [ -f `brew --prefix`/etc/bash_completion ]; then . ` &hellip;">
+  <meta name="description" content=" Blog Archive 2012 读书笔记:Git权威指南
+Oct 13 2012 posted in Git, 读书笔记 Recent Posts 读书笔记:Git权威指南 ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +19,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then . ` &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lianmc.github.com/">
+  <link rel="canonical" href="http://lianmc.github.com/blog/archives/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -64,113 +63,40 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then . ` &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/13/notes-gotgit/">读书笔记:Git权威指南</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-13T10:28:00+08:00" pubdate data-updated="true">Oct 13<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/10/13/notes-gotgit/#disqus_thread">Comments</a>
-        
-      </p>
+    <h1 class="entry-title">Blog Archive</h1>
     
   </header>
+  
+  <div id="blog-archives">
 
 
-  <div class="entry-content"><h2>Git初始化</h2>
 
-<h4>命令补全</h4>
+  
+  <h2>2012</h2>
 
-<pre><code>$ brew install bash-completion
-# add the following lines to your ~/.bash_profile
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
-</code></pre>
+<article>
+  
+<h1><a href="/blog/2012/10/13/notes-gotgit/">读书笔记:Git权威指南</a></h1>
+<time datetime="2012-10-13T10:28:00+08:00" pubdate><span class='month'>Oct</span> <span class='day'>13</span> <span class='year'>2012</span></time>
 
-<h4>用户配置文件<code>~/.gitconfig</code>，系统配置文件<code>/etc/gitconfig</code>。</h4>
-
-<pre><code>$ git config --global user.name "xx"
-$ git config --global user.email "xx@mail.com"
-$ git config --system alias.ci commit
-$ git config --global color.ui true
-</code></pre>
-
-<h4>重新修改最新的提交</h4>
-
-<pre><code>$ git commit --amend -m "new message"
-</code></pre>
-
-<h2>Git暂存区(stage)</h2>
-
-<h4>查看提交日志</h4>
-
-<pre><code>$ git log --pretty=oneline
-</code></pre>
-
-<blockquote><p>文件.git/index实际上就是一个包含文件索引的目录树，记录了文件名和文件在状态信息(时间戳和文件长度等)。文件的内容并没有存储在其中，而是保存在Git对象库.git/objects目录中，文件索引建立了文件和对象库中对象实体之间的对应。</p></blockquote>
-
-<h4>查看HEAD指向的目录树</h4>
-
-<pre><code>$ git ls-tree -l HEAD
-</code></pre>
-
-<h4>git diff命令</h4>
-
-<ul>
-<li>工作区和暂存区比较<code>$ git diff</code></li>
-<li>暂存区和HEAD比较<code>$ git diff --cached</code></li>
-<li>工作区和HEAD比较<code>$ git diff HEAD</code></li>
-</ul>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/git/'>Git</a>, <a class='category' href='/blog/categories/读书笔记/'>读书笔记</a></span>
+</footer>
 
 
-<blockquote><p>不要使用git commit -a命令，减少用git add命令标识变更文件的步骤，会丢掉git暂存区带给用户的最大好处。</p>
+</article>
 
-<h4>保存当前工作进度</h4>
-
-<pre><code>$ git stash
-</code></pre></blockquote>
-
-<h2>git 对象</h2>
-
-<p>git库中的objects目录说明：ID的前2位作为目录名，后38位作为文件名。</p>
-
-<p>blob: binary large object, basic large object</p>
-
-<h2>git 重置</h2>
 </div>
-  
-  
 
-
-    </article>
   
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+</article>
+
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -191,6 +117,7 @@ $ git config --global color.ui true
 
   
 </aside>
+
 
     </div>
   </div>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Git | AlianStudio Blog]]></title>
+  <link href="http://lianmc.github.com/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://lianmc.github.com/"/>
+  <updated>2012-10-13T15:09:05+08:00</updated>
+  <id>http://lianmc.github.com/</id>
+  <author>
+    <name><![CDATA[lianmc]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[读书笔记:Git权威指南]]></title>
+    <link href="http://lianmc.github.com/blog/2012/10/13/notes-gotgit/"/>
+    <updated>2012-10-13T10:28:00+08:00</updated>
+    <id>http://lianmc.github.com/blog/2012/10/13/notes-gotgit</id>
+    <content type="html"><![CDATA[<h2>Git初始化</h2>
+
+<h4>命令补全</h4>
+
+<pre><code>$ brew install bash-completion
+# add the following lines to your ~/.bash_profile
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+</code></pre>
+
+<h4>用户配置文件<code>~/.gitconfig</code>，系统配置文件<code>/etc/gitconfig</code>。</h4>
+
+<pre><code>$ git config --global user.name "xx"
+$ git config --global user.email "xx@mail.com"
+$ git config --system alias.ci commit
+$ git config --global color.ui true
+</code></pre>
+
+<h4>重新修改最新的提交</h4>
+
+<pre><code>$ git commit --amend -m "new message"
+</code></pre>
+
+<h2>Git暂存区(stage)</h2>
+
+<h4>查看提交日志</h4>
+
+<pre><code>$ git log --pretty=oneline
+</code></pre>
+
+<blockquote><p>文件.git/index实际上就是一个包含文件索引的目录树，记录了文件名和文件在状态信息(时间戳和文件长度等)。文件的内容并没有存储在其中，而是保存在Git对象库.git/objects目录中，文件索引建立了文件和对象库中对象实体之间的对应。</p></blockquote>
+
+<h4>查看HEAD指向的目录树</h4>
+
+<pre><code>$ git ls-tree -l HEAD
+</code></pre>
+
+<h4>git diff命令</h4>
+
+<ul>
+<li>工作区和暂存区比较<code>$ git diff</code></li>
+<li>暂存区和HEAD比较<code>$ git diff --cached</code></li>
+<li>工作区和HEAD比较<code>$ git diff HEAD</code></li>
+</ul>
+
+
+<blockquote><p>不要使用git commit -a命令，减少用git add命令标识变更文件的步骤，会丢掉git暂存区带给用户的最大好处。</p>
+
+<h4>保存当前工作进度</h4>
+
+<pre><code>$ git stash
+</code></pre></blockquote>
+
+<h2>git 对象</h2>
+
+<p>git库中的objects目录说明：ID的前2位作为目录名，后38位作为文件名。</p>
+
+<p>blob: binary large object, basic large object</p>
+
+<h2>git 重置</h2>
+]]></content>
+  </entry>
+  
+</feed>
