@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Cocoa | AlianStudio Blog]]></title>
+  <link href="http://lianmc.github.com/blog/categories/cocoa/atom.xml" rel="self"/>
+  <link href="http://lianmc.github.com/"/>
+  <updated>2012-10-14T13:11:46+08:00</updated>
+  <id>http://lianmc.github.com/</id>
+  <author>
+    <name><![CDATA[lianmc]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Notes: Cocoa Programming for Mac OS X 4th]]></title>
+    <link href="http://lianmc.github.com/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/"/>
+    <updated>2012-10-13T21:27:00+08:00</updated>
+    <id>http://lianmc.github.com/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e</id>
+    <content type="html"><![CDATA[<h2>Let's Get Started</h2>
+
+<p><code>#import</code> is similar to the C preprocessor's <code>#include</code>.However, <code>#import</code> ensures that the files is included only once.</p>
+
+<p>To minimize conflicts between C code and Objective-C code, Objective-C keywords are prefixed by @.</p>
+
+<h2>Memory Management</h2>
+
+<p>three memory management solutions:</p>
+
+<ol>
+<li>manual reference counting</li>
+<li>garbage collection for Objective-C in MacOS 10.5</li>
+<li>automatic reference counting(ARC) in MacOS 10.7</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

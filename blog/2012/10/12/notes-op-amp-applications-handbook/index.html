@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>AlianStudio Blog</title>
+  <title>读书笔记: 运算放大器运用技术手册 - AlianStudio Blog</title>
   <meta name="author" content="lianmc">
 
   
-  <meta name="description" content="Let&#8217;s Get Started #import is similar to the C preprocessor&#8217;s #include.However, #import ensures that the files is included only once. To &hellip;">
+  <meta name="description" content="运算放大器基础 在应用需求的驱动下，才发展出各种不同结构的运放。 运放处理两个输入端之间的微弱差模信号，将其变换成以电源公共端为参考地的单端输出信号。 理想运放的特性 差分增益无穷大，精密运放的增益通常为100~130dB，而高速运放的增益仅为60~70dB。
+共模增益为零， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lianmc.github.com/">
+  <link rel="canonical" href="http://lianmc.github.com/blog/2012/10/12/notes-op-amp-applications-handbook/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -62,166 +63,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/">Notes: Cocoa Programming for Mac OS X 4th</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-13T21:27:00+08:00" pubdate data-updated="true">Oct 13<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Let&#8217;s Get Started</h2>
-
-<p><code>#import</code> is similar to the C preprocessor&#8217;s <code>#include</code>.However, <code>#import</code> ensures that the files is included only once.</p>
-
-<p>To minimize conflicts between C code and Objective-C code, Objective-C keywords are prefixed by @.</p>
-
-<h2>Memory Management</h2>
-
-<p>three memory management solutions:</p>
-
-<ol>
-<li>manual reference counting</li>
-<li>garbage collection for Objective-C in MacOS 10.5</li>
-<li>automatic reference counting(ARC) in MacOS 10.7</li>
-</ol>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/13/notes-gotgit/">读书笔记: Git权威指南</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-13T10:28:00+08:00" pubdate data-updated="true">Oct 13<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/10/13/notes-gotgit/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Git初始化</h2>
-
-<h4>命令补全</h4>
-
-<pre><code>$ brew install bash-completion
-# add the following lines to your ~/.bash_profile
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
-</code></pre>
-
-<h4>用户配置文件<code>~/.gitconfig</code>，系统配置文件<code>/etc/gitconfig</code>。</h4>
-
-<pre><code>$ git config --global user.name "xx"
-$ git config --global user.email "xx@mail.com"
-$ git config --system alias.ci commit
-$ git config --global color.ui true
-</code></pre>
-
-<h4>重新修改最新的提交</h4>
-
-<pre><code>$ git commit --amend -m "new message"
-</code></pre>
-
-<h2>Git暂存区(stage)</h2>
-
-<h4>查看提交日志</h4>
-
-<pre><code>$ git log --pretty=oneline
-</code></pre>
-
-<blockquote><p>文件.git/index实际上就是一个包含文件索引的目录树，记录了文件名和文件在状态信息(时间戳和文件长度等)。文件的内容并没有存储在其中，而是保存在Git对象库.git/objects目录中，文件索引建立了文件和对象库中对象实体之间的对应。</p></blockquote>
-
-<h4>查看HEAD指向的目录树</h4>
-
-<pre><code>$ git ls-tree -l HEAD
-</code></pre>
-
-<h4>git diff命令</h4>
-
-<ul>
-<li>工作区和暂存区比较<code>$ git diff</code></li>
-<li>暂存区和HEAD比较<code>$ git diff --cached</code></li>
-<li>工作区和HEAD比较<code>$ git diff HEAD</code></li>
-</ul>
-
-
-<blockquote><p>不要使用git commit -a命令，减少用git add命令标识变更文件的步骤，会丢掉git暂存区带给用户的最大好处。</p>
-
-<h4>保存当前工作进度</h4>
-
-<pre><code>$ git stash
-</code></pre></blockquote>
-
-<h2>git 对象</h2>
-
-<p>git库中的objects目录说明：ID的前2位作为目录名，后38位作为文件名。</p>
-
-<p>blob: binary large object, basic large object</p>
-
-<h2>git 重置</h2>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/12/notes-op-amp-applications-handbook/">读书笔记: 运算放大器运用技术手册</a></h1>
+      <h1 class="entry-title">读书笔记: 运算放大器运用技术手册</h1>
     
     
       <p class="meta">
@@ -239,14 +86,14 @@ $ git config --global color.ui true
 
 <time datetime="2012-10-12T10:28:00+08:00" pubdate data-updated="true">Oct 12<span>th</span>, 2012</time>
         
-         | <a href="/blog/2012/10/12/notes-op-amp-applications-handbook/#disqus_thread">Comments</a>
+         | <a href="#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><h2>运算放大器基础</h2>
+<div class="entry-content"><h2>运算放大器基础</h2>
 
 <p>在应用需求的驱动下，才发展出各种不同结构的运放。</p>
 
@@ -292,18 +139,65 @@ $ git config --global color.ui true
 
 <p>分析运放电路，首先就要区分噪声增益和信号增益。</p>
 </div>
+
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">lianmc</span></span>
+
+      
+
+
+
+
+
+
+
+
   
 
 
-    </article>
+<time datetime="2012-10-12T10:28:00+08:00" pubdate data-updated="true">Oct 12<span>th</span>, 2012</time>
+      
+
+<span class="categories">
   
-  <div class="pagination">
+    <a class='category' href='/blog/categories/电子/'>电子</a>, <a class='category' href='/blog/categories/读书笔记/'>读书笔记</a>
+  
+</span>
+
+
+    </p>
     
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://lianmc.github.com/blog/2012/10/12/notes-op-amp-applications-handbook/" data-via="" data-counturl="http://lianmc.github.com/blog/2012/10/12/notes-op-amp-applications-handbook/" >Tweet</a>
+  
+  
+  
 </div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/10/13/notes-gotgit/" title="Next Post: 读书笔记: Git权威指南">读书笔记: Git权威指南 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -333,6 +227,7 @@ $ git config --global color.ui true
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -347,7 +242,10 @@ $ git config --global color.ui true
       var disqus_shortname = 'alianstudioblog';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://lianmc.github.com/blog/2012/10/12/notes-op-amp-applications-handbook/';
+        var disqus_url = 'http://lianmc.github.com/blog/2012/10/12/notes-op-amp-applications-handbook/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
