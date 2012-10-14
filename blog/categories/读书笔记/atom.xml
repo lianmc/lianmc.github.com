@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 读书笔记 | AlianStudio Blog]]></title>
   <link href="http://lianmc.github.com/blog/categories/读书笔记/atom.xml" rel="self"/>
   <link href="http://lianmc.github.com/"/>
-  <updated>2012-10-14T13:11:46+08:00</updated>
+  <updated>2012-10-14T21:48:21+08:00</updated>
   <id>http://lianmc.github.com/</id>
   <author>
     <name><![CDATA[lianmc]]></name>
@@ -103,6 +103,20 @@ $ git config --global color.ui true
 <p>blob: binary large object, basic large object</p>
 
 <h2>git 重置</h2>
+
+<p>引用<code>refs/heads/master</code>就好像是一个游标，在有新的提交发生时指向新的提交。可是如果只可上，不可下，就不能称为”游标“。Git的`git reset 命令，可以将”游标“指向任意一个存在的提交ID。</p>
+
+<pre><code>git reset --hard 9e8a761
+</code></pre>
+
+<p><code>git reflog show master</code>查看操作日志，可用于恢复操作。</p>
+
+<pre><code>git reset --hard master@{2}
+</code></pre>
+
+<p><code>git reset HEAD^</code> 工作区不改变，但是暂存区会回退到上一次提交之前，引用也会回退一次。</p>
+
+<h2>git 检出</h2>
 ]]></content>
   </entry>
   
