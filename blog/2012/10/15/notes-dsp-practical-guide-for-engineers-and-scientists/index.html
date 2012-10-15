@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Notes: Cocoa Programming for Mac OS X 4th - AlianStudio Blog</title>
+  <title>读书笔记: 实用数字信号处理从原理到应用 - AlianStudio Blog</title>
   <meta name="author" content="lianmc">
 
   
-  <meta name="description" content="Let&#8217;s Get Started #import is similar to the C preprocessor&#8217;s #include.However, #import ensures that the files is included only once. To &hellip;">
+  <meta name="description" content="DSP应用领域及影响 由于计算机价格昂贵，DSP最初只用于4个关键领域：雷达和声呐、石油勘探、空间探测、医学成像 => 军事和政府需求推动。 应用领域: 电信、音频处理、回声定位、图像处理。 统计、概率和噪声 信号采集过程: 统计和概率中概念的应用。统计是解释数字化数据(采集的信号)的一种科学， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lianmc.github.com/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/">
+  <link rel="canonical" href="http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">Notes: Cocoa Programming for Mac OS X 4th</h1>
+      <h1 class="entry-title">读书笔记: 实用数字信号处理从原理到应用</h1>
     
     
       <p class="meta">
@@ -83,7 +83,7 @@
   
 
 
-<time datetime="2012-10-13T21:27:00+08:00" pubdate data-updated="true">Oct 13<span>th</span>, 2012</time>
+<time datetime="2012-10-15T18:18:00+08:00" pubdate data-updated="true">Oct 15<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -92,22 +92,31 @@
   </header>
 
 
-<div class="entry-content"><h2>Let&#8217;s Get Started</h2>
+<div class="entry-content"><h2>DSP应用领域及影响</h2>
 
-<p><code>#import</code> is similar to the C preprocessor&#8217;s <code>#include</code>.However, <code>#import</code> ensures that the files is included only once.</p>
+<p>由于计算机价格昂贵，DSP最初只用于4个关键领域：雷达和声呐、石油勘探、空间探测、医学成像 => 军事和政府需求推动。</p>
 
-<p>To minimize conflicts between C code and Objective-C code, Objective-C keywords are prefixed by @.</p>
+<p>应用领域: 电信、音频处理、回声定位、图像处理。</p>
 
-<h2>Memory Management</h2>
+<h2>统计、概率和噪声</h2>
 
-<p>three memory management solutions:</p>
+<p>信号采集过程: 统计和概率中概念的应用。<strong>统计</strong>是解释数字化数据(采集的信号)的一种科学，<strong>概率</strong>则被用在DSP中以帮助理解产生信号的<strong>过程</strong>。理解采集信号和基本过程之间的区别是许多DSP技术的关键。</p>
 
-<ol>
-<li>manual reference counting</li>
-<li>garbage collection for Objective-C in MacOS 10.5</li>
-<li>automatic reference counting(ARC) in MacOS 10.7</li>
-</ol>
+<p>横轴上参数的类型就是信号所在的域。</p>
 
+<pre><code>信噪比(SNR) = 平均值 / 标准偏差
+变异系数(CV) = 标准偏差 / 平均值
+</code></pre>
+
+<p>好的数据意味着较大的SNR值和较小的CV值。</p>
+
+<p>正态分布的积分不能用一般方法积分，只能通过数值积分的方法来实现。</p>
+
+<p>平均值相对于真值的偏移程度称为测量的<strong>准确度</strong>，每次独立的测量值之间的差别叫做测量的<strong>精度</strong>。准确度是对系统校准的衡量(系统误差)，精度是对随机噪声的衡量(随机误差)。</p>
+
+<p>当需要确定误差究竟是准确度还是精度的问题是时，请先问自己两个问题。第一，对连续的测量值取平均能提供较好的测量结果吗？如果是，则为精度问题;反之，则为准确度问题。第二，测量系统的校准能改善误差吗？如果是，则为准确度问题;如果不是，则为精度问题。</p>
+
+<h2>模数转换与数模转换</h2>
 </div>
 
 
@@ -130,12 +139,12 @@
   
 
 
-<time datetime="2012-10-13T21:27:00+08:00" pubdate data-updated="true">Oct 13<span>th</span>, 2012</time>
+<time datetime="2012-10-15T18:18:00+08:00" pubdate data-updated="true">Oct 15<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/cocoa/'>Cocoa</a>, <a class='category' href='/blog/categories/mac/'>Mac</a>, <a class='category' href='/blog/categories/读书笔记/'>读书笔记</a>
+    <a class='category' href='/blog/categories/dsp/'>dsp</a>, <a class='category' href='/blog/categories/电子/'>电子</a>, <a class='category' href='/blog/categories/读书笔记/'>读书笔记</a>
   
 </span>
 
@@ -144,7 +153,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://lianmc.github.com/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/" data-via="" data-counturl="http://lianmc.github.com/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/" data-via="" data-counturl="http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/" >Tweet</a>
   
   
   
@@ -153,10 +162,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/10/13/notes-gotgit/" title="Previous Post: 读书笔记: Git权威指南">&laquo; 读书笔记: Git权威指南</a>
+        <a class="basic-alignment left" href="/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/" title="Previous Post: Notes: Cocoa Programming for Mac OS X 4th">&laquo; Notes: Cocoa Programming for Mac OS X 4th</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/" title="Next Post: 读书笔记: 实用数字信号处理从原理到应用">读书笔记: 实用数字信号处理从原理到应用 &raquo;</a>
       
     </p>
   </footer>
@@ -219,8 +226,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://lianmc.github.com/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/';
-        var disqus_url = 'http://lianmc.github.com/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/';
+        var disqus_identifier = 'http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/';
+        var disqus_url = 'http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/';
         var disqus_script = 'embed.js';
       
     (function () {

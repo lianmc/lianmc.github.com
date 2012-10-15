@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: dsp | AlianStudio Blog]]></title>
+  <link href="http://lianmc.github.com/blog/categories/dsp/atom.xml" rel="self"/>
+  <link href="http://lianmc.github.com/"/>
+  <updated>2012-10-15T20:21:12+08:00</updated>
+  <id>http://lianmc.github.com/</id>
+  <author>
+    <name><![CDATA[lianmc]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[读书笔记: 实用数字信号处理从原理到应用]]></title>
+    <link href="http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/"/>
+    <updated>2012-10-15T18:18:00+08:00</updated>
+    <id>http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists</id>
+    <content type="html"><![CDATA[<h2>DSP应用领域及影响</h2>
+
+<p>由于计算机价格昂贵，DSP最初只用于4个关键领域：雷达和声呐、石油勘探、空间探测、医学成像 => 军事和政府需求推动。</p>
+
+<p>应用领域: 电信、音频处理、回声定位、图像处理。</p>
+
+<h2>统计、概率和噪声</h2>
+
+<p>信号采集过程: 统计和概率中概念的应用。<strong>统计</strong>是解释数字化数据(采集的信号)的一种科学，<strong>概率</strong>则被用在DSP中以帮助理解产生信号的<strong>过程</strong>。理解采集信号和基本过程之间的区别是许多DSP技术的关键。</p>
+
+<p>横轴上参数的类型就是信号所在的域。</p>
+
+<pre><code>信噪比(SNR) = 平均值 / 标准偏差
+变异系数(CV) = 标准偏差 / 平均值
+</code></pre>
+
+<p>好的数据意味着较大的SNR值和较小的CV值。</p>
+
+<p>正态分布的积分不能用一般方法积分，只能通过数值积分的方法来实现。</p>
+
+<p>平均值相对于真值的偏移程度称为测量的<strong>准确度</strong>，每次独立的测量值之间的差别叫做测量的<strong>精度</strong>。准确度是对系统校准的衡量(系统误差)，精度是对随机噪声的衡量(随机误差)。</p>
+
+<p>当需要确定误差究竟是准确度还是精度的问题是时，请先问自己两个问题。第一，对连续的测量值取平均能提供较好的测量结果吗？如果是，则为精度问题;反之，则为准确度问题。第二，测量系统的校准能改善误差吗？如果是，则为准确度问题;如果不是，则为精度问题。</p>
+
+<h2>模数转换与数模转换</h2>
+]]></content>
+  </entry>
+  
+</feed>

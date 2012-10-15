@@ -4,7 +4,7 @@
   <title><![CDATA[AlianStudio Blog]]></title>
   <link href="http://lianmc.github.com/atom.xml" rel="self"/>
   <link href="http://lianmc.github.com/"/>
-  <updated>2012-10-14T21:48:21+08:00</updated>
+  <updated>2012-10-15T20:21:12+08:00</updated>
   <id>http://lianmc.github.com/</id>
   <author>
     <name><![CDATA[lianmc]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[读书笔记: 实用数字信号处理从原理到应用]]></title>
+    <link href="http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/"/>
+    <updated>2012-10-15T18:18:00+08:00</updated>
+    <id>http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists</id>
+    <content type="html"><![CDATA[<h2>DSP应用领域及影响</h2>
+
+<p>由于计算机价格昂贵，DSP最初只用于4个关键领域：雷达和声呐、石油勘探、空间探测、医学成像 => 军事和政府需求推动。</p>
+
+<p>应用领域: 电信、音频处理、回声定位、图像处理。</p>
+
+<h2>统计、概率和噪声</h2>
+
+<p>信号采集过程: 统计和概率中概念的应用。<strong>统计</strong>是解释数字化数据(采集的信号)的一种科学，<strong>概率</strong>则被用在DSP中以帮助理解产生信号的<strong>过程</strong>。理解采集信号和基本过程之间的区别是许多DSP技术的关键。</p>
+
+<p>横轴上参数的类型就是信号所在的域。</p>
+
+<pre><code>信噪比(SNR) = 平均值 / 标准偏差
+变异系数(CV) = 标准偏差 / 平均值
+</code></pre>
+
+<p>好的数据意味着较大的SNR值和较小的CV值。</p>
+
+<p>正态分布的积分不能用一般方法积分，只能通过数值积分的方法来实现。</p>
+
+<p>平均值相对于真值的偏移程度称为测量的<strong>准确度</strong>，每次独立的测量值之间的差别叫做测量的<strong>精度</strong>。准确度是对系统校准的衡量(系统误差)，精度是对随机噪声的衡量(随机误差)。</p>
+
+<p>当需要确定误差究竟是准确度还是精度的问题是时，请先问自己两个问题。第一，对连续的测量值取平均能提供较好的测量结果吗？如果是，则为精度问题;反之，则为准确度问题。第二，测量系统的校准能改善误差吗？如果是，则为准确度问题;如果不是，则为精度问题。</p>
+
+<h2>模数转换与数模转换</h2>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Notes: Cocoa Programming for Mac OS X 4th]]></title>
@@ -127,6 +160,8 @@ $ git config --global color.ui true
     <id>http://lianmc.github.com/blog/2012/10/12/notes-op-amp-applications-handbook</id>
     <content type="html"><![CDATA[<h2>运算放大器基础</h2>
 
+<h3>概述</h3>
+
 <p>在应用需求的驱动下，才发展出各种不同结构的运放。</p>
 
 <p>运放处理两个输入端之间的微弱差模信号，将其变换成以电源公共端为参考地的单端输出信号。</p>
@@ -170,6 +205,32 @@ $ git config --global color.ui true
 <h5>噪声增益(noise gain)</h5>
 
 <p>分析运放电路，首先就要区分噪声增益和信号增益。</p>
+
+<h5>增益稳定性</h5>
+
+<p>开环增益会随温度、负载等变化</p>
+
+<h5>环路增益</h5>
+
+<p>几乎每一项因负反馈而引起的闭环特性的改善程度，都与环路增益的大小成比例。</p>
+
+<h5>环路增益的频率特性</h5>
+
+<h4>运放的共模动态范围</h4>
+
+<p>运放的输入和输出共模电压的范围将依据其与两条电源轨的限制程度来定义。</p>
+
+<p>对于单电源供电的运放来说，其共模电压范围就达到两条电源轨线。</p>
+
+<h4>双端供电和单端供电的差别</h4>
+
+<p>10V是运放工作电源范围内的一个分界点。</p>
+
+<p>双电源运放以其更高的精度而长期深受设计师的喜爱，但受到诸如斩波稳零型单运放的挑战。</p>
+
+<h3>运放的拓扑</h3>
+
+<p>电流反馈型拓扑主要用于对高速和低扰动有苛刻要求的场合，这是在同等条件下三极管电路的电流变化速度比电压快的特性。</p>
 ]]></content>
   </entry>
   
