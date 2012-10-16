@@ -1,33 +1,37 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://lianmc.github.com/blog/2012/10/12/notes-op-amp-applications-handbook/</loc>
+        <loc>
+            http://blog.alianstudio.info/blog/2012/10/12/notes-op-amp-applications-handbook/
+        </loc>
         <lastmod>2012-10-15T10:28:51+08:00</lastmod>
     </url>
     <url>
-        <loc>http://lianmc.github.com/blog/2012/10/13/notes-gotgit/</loc>
+        <loc>http://blog.alianstudio.info/blog/2012/10/13/notes-gotgit/</loc>
         <lastmod>2012-10-14T14:55:51+08:00</lastmod>
     </url>
     <url>
-        <loc>http://lianmc.github.com/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/</loc>
+        <loc>
+            http://blog.alianstudio.info/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/
+        </loc>
         <lastmod>2012-10-14T13:06:57+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/
+            http://blog.alianstudio.info/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/
         </loc>
         <lastmod>2012-10-15T20:47:31+08:00</lastmod>
     </url>
     <url>
-        <loc>http://lianmc.github.com/about/</loc>
+        <loc>http://blog.alianstudio.info/about/</loc>
         <lastmod>2012-10-16T13:38:23+08:00</lastmod>
     </url>
     <url>
-        <loc>http://lianmc.github.com/blog/archives/</loc>
+        <loc>http://blog.alianstudio.info/blog/archives/</loc>
         <lastmod>2012-10-15T20:47:31+08:00</lastmod>
     </url>
     <url>
-        <loc>http://lianmc.github.com/</loc>
+        <loc>http://blog.alianstudio.info/</loc>
         <lastmod>2012-10-15T20:47:31+08:00</lastmod>
     </url>
 </urlset>

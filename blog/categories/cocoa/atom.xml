@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Cocoa | AlianStudio Blog]]></title>
-  <link href="http://lianmc.github.com/blog/categories/cocoa/atom.xml" rel="self"/>
-  <link href="http://lianmc.github.com/"/>
-  <updated>2012-10-16T13:44:31+08:00</updated>
-  <id>http://lianmc.github.com/</id>
+  <link href="http://blog.alianstudio.info/blog/categories/cocoa/atom.xml" rel="self"/>
+  <link href="http://blog.alianstudio.info/"/>
+  <updated>2012-10-16T13:46:11+08:00</updated>
+  <id>http://blog.alianstudio.info/</id>
   <author>
     <name><![CDATA[lianmc]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Notes: Cocoa Programming for Mac OS X 4th]]></title>
-    <link href="http://lianmc.github.com/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/"/>
+    <link href="http://blog.alianstudio.info/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e/"/>
     <updated>2012-10-13T21:27:00+08:00</updated>
-    <id>http://lianmc.github.com/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e</id>
+    <id>http://blog.alianstudio.info/blog/2012/10/13/notes-cocoa-programming-for-macosx-4e</id>
     <content type="html"><![CDATA[<h2>Let's Get Started</h2>
 
 <p><code>#import</code> is similar to the C preprocessor's <code>#include</code>.However, <code>#import</code> ensures that the files is included only once.</p>

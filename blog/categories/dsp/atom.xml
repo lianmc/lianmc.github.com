@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: dsp | AlianStudio Blog]]></title>
-  <link href="http://lianmc.github.com/blog/categories/dsp/atom.xml" rel="self"/>
-  <link href="http://lianmc.github.com/"/>
-  <updated>2012-10-16T13:44:31+08:00</updated>
-  <id>http://lianmc.github.com/</id>
+  <link href="http://blog.alianstudio.info/blog/categories/dsp/atom.xml" rel="self"/>
+  <link href="http://blog.alianstudio.info/"/>
+  <updated>2012-10-16T13:46:11+08:00</updated>
+  <id>http://blog.alianstudio.info/</id>
   <author>
     <name><![CDATA[lianmc]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[读书笔记: 实用数字信号处理从原理到应用]]></title>
-    <link href="http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/"/>
+    <link href="http://blog.alianstudio.info/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/"/>
     <updated>2012-10-15T18:18:00+08:00</updated>
-    <id>http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists</id>
+    <id>http://blog.alianstudio.info/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists</id>
     <content type="html"><![CDATA[<p>书名: 实用数字号处理: 从原理到应用   <br/>
 原名: Digital Signal Processing: A Practical Guide for Engineers and Scientists  <br/>
 作者: Steve W. Smith  <br/>

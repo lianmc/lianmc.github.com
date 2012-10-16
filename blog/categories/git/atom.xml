@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Git | AlianStudio Blog]]></title>
-  <link href="http://lianmc.github.com/blog/categories/git/atom.xml" rel="self"/>
-  <link href="http://lianmc.github.com/"/>
-  <updated>2012-10-16T13:44:31+08:00</updated>
-  <id>http://lianmc.github.com/</id>
+  <link href="http://blog.alianstudio.info/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://blog.alianstudio.info/"/>
+  <updated>2012-10-16T13:46:11+08:00</updated>
+  <id>http://blog.alianstudio.info/</id>
   <author>
     <name><![CDATA[lianmc]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[读书笔记: Git权威指南]]></title>
-    <link href="http://lianmc.github.com/blog/2012/10/13/notes-gotgit/"/>
+    <link href="http://blog.alianstudio.info/blog/2012/10/13/notes-gotgit/"/>
     <updated>2012-10-13T10:28:00+08:00</updated>
-    <id>http://lianmc.github.com/blog/2012/10/13/notes-gotgit</id>
+    <id>http://blog.alianstudio.info/blog/2012/10/13/notes-gotgit</id>
     <content type="html"><![CDATA[<h2>Git初始化</h2>
 
 <h4>命令补全</h4>
