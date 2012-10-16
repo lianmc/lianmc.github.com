@@ -4,7 +4,7 @@
   <title><![CDATA[AlianStudio Blog]]></title>
   <link href="http://lianmc.github.com/atom.xml" rel="self"/>
   <link href="http://lianmc.github.com/"/>
-  <updated>2012-10-15T20:46:12+08:00</updated>
+  <updated>2012-10-16T13:38:58+08:00</updated>
   <id>http://lianmc.github.com/</id>
   <author>
     <name><![CDATA[lianmc]]></name>
@@ -18,15 +18,13 @@
     <link href="http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/"/>
     <updated>2012-10-15T18:18:00+08:00</updated>
     <id>http://lianmc.github.com/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists</id>
-    <content type="html"><![CDATA[<p>书名: 实用数额信号处理: 从原理到应用   <br/>
+    <content type="html"><![CDATA[<p>书名: 实用数字号处理: 从原理到应用   <br/>
 原名: Digital Signal Processing: A Practical Guide for Engineers and Scientists  <br/>
 作者: Steve W. Smith  <br/>
 丛书: 图灵电子与电气工程丛书  <br/>
 出版社: 人民邮电出版社</p>
 
 <p>该书从1997年左右开始在作者网站<a href="http://www.dspguide.com">http://www.dspguide.com</a>上作为电子书免费下载阅读，现在也可以上<a href="http://www.analog.com/en/content/scientist_engineers_guide/fca.html">ADI</a>下载，后来出版社出了纸质版的，该书内容通俗易懂，在DSP学习者非常有名，非常值得一看。</p>
-
-<hr />
 
 <h2>DSP应用领域及影响</h2>
 
