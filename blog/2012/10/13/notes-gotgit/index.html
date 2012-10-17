@@ -170,6 +170,8 @@ $ git config --global color.ui true
 <p><code>git reset HEAD^</code> 工作区不改变，但是暂存区会回退到上一次提交之前，引用也会回退一次。</p>
 
 <h2>git 检出</h2>
+
+<p>重置(reset)的默认值是HEAD，而检出(checkout)的默认值是暂存区。因此，重置一般用于重置暂存区(除非使用&#8211;hard参数,否则不重置工作区)，而检出命令主要是覆盖</p>
 </div>
 
 

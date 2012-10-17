@@ -128,9 +128,12 @@
 
 <p>当需要确定误差究竟是准确度还是精度的问题是时，请先问自己两个问题。第一，对连续的测量值取平均能提供较好的测量结果吗？如果是，则为精度问题;反之，则为准确度问题。第二，测量系统的校准能改善误差吗？如果是，则为准确度问题;如果不是，则为精度问题。</p>
 
-<h2>模数转换与数模转换</h2>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/10/15/notes-dsp-practical-guide-for-engineers-and-scientists/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -294,6 +297,8 @@ $ git config --global color.ui true
 <p><code>git reset HEAD^</code> 工作区不改变，但是暂存区会回退到上一次提交之前，引用也会回退一次。</p>
 
 <h2>git 检出</h2>
+
+<p>重置(reset)的默认值是HEAD，而检出(checkout)的默认值是暂存区。因此，重置一般用于重置暂存区(除非使用&#8211;hard参数,否则不重置工作区)，而检出命令主要是覆盖</p>
 </div>
   
   
