@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Rails | AlianStudio Blog]]></title>
+  <link href="http://blog.alianstudio.info/blog/categories/rails/atom.xml" rel="self"/>
+  <link href="http://blog.alianstudio.info/"/>
+  <updated>2012-10-18T19:21:33+08:00</updated>
+  <id>http://blog.alianstudio.info/</id>
+  <author>
+    <name><![CDATA[lianmc]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[notes agile web development with rails 3e]]></title>
+    <link href="http://blog.alianstudio.info/blog/2012/10/17/notes-agile-web-development-with-rails-3e/"/>
+    <updated>2012-10-17T20:28:00+08:00</updated>
+    <id>http://blog.alianstudio.info/blog/2012/10/17/notes-agile-web-development-with-rails-3e</id>
+    <content type="html"><![CDATA[<h2>构建应用程序</h2>
+
+<p>新建应用程序，并运行测试</p>
+
+<pre><code>rails new demo
+ruby script/server
+</code></pre>
+
+<p>新建控制器</p>
+
+<pre><code>ruby script/generate controller Say
+</code></pre>
+
+<p>URL结构</p>
+
+<pre><code>http://xxx.xxx.com/controller/action
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

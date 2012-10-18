@@ -23,15 +23,21 @@
         <lastmod>2012-10-17T18:39:22+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://blog.alianstudio.info/blog/2012/10/17/notes-agile-web-development-with-rails-3e/
+        </loc>
+        <lastmod>2012-10-18T18:25:55+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://blog.alianstudio.info/about/</loc>
         <lastmod>2012-10-16T13:50:29+08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.alianstudio.info/blog/archives/</loc>
-        <lastmod>2012-10-17T18:39:22+08:00</lastmod>
+        <lastmod>2012-10-18T18:25:55+08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.alianstudio.info/</loc>
-        <lastmod>2012-10-17T18:39:22+08:00</lastmod>
+        <lastmod>2012-10-18T18:25:55+08:00</lastmod>
     </url>
 </urlset>
